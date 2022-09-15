@@ -1,0 +1,7 @@
+{
+  "sourceLanguage": "German",
+  "translationLanguage": "Spanish",
+  "initialText": "Hallo",
+  "expectedResult": "Hola",
+  "hiText": "Hi!"
+}

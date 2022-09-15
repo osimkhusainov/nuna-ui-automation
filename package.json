@@ -1,0 +1,16 @@
+{
+  "name": "nuna",
+  "version": "1.0.0",
+  "description": "Test Automation take-home challenge",
+  "main": "index.js",
+  "scripts": {
+    "run": "npm run cypress open",
+    "cy:run": "npx cypress run --spec 'cypress/integration/*.js'"
+  },
+  "author": "Osim Khusainov",
+  "license": "ISC",
+  "devDependencies": {
+    "@testing-library/cypress": "^8.0.3",
+    "cypress": "^9.7.0"
+  }
+}
