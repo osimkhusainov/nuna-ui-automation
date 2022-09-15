@@ -30,12 +30,8 @@ describe("UI automation google translate page", () => {
     cy.get("textarea:visible").clear();
     cy.get("a[role='button'] span").first().should("be.visible").click();
     data.hiText.split("").forEach((letter) => {
-      if (letter == letter.toUpperCase()) {
-        cy.get("#K16").click();
-        cy.findByText(letter, { selector: "span" }).click();
-      } else {
-        cy.findByText(letter, { selector: "span" }).click();
-      }
+      letter == letter.toUpperCase() && cy.get("#K16").click();
+      cy.findByText(letter, { selector: "span" }).click();
     });
     cy.get("textarea").should("have.value", data.hiText);
   });
