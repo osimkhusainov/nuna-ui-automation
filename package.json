@@ -4,7 +4,7 @@
   "description": "Test Automation take-home challenge",
   "main": "index.js",
   "scripts": {
-    "run": "npm run cypress open",
+    "test": "npx cypress open",
     "cy:run": "npx cypress run --spec 'cypress/integration/*.js'"
   },
   "author": "Osim Khusainov",
